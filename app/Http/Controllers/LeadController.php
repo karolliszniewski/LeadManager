@@ -27,6 +27,15 @@ class LeadController extends Controller
             Log::error('Error sending email: ' . $e->getMessage());
             return back()->with('error', 'There was a problem sending the email.');
         }
-        return redirect()->route('contact')->with('success', 'Thank you! Please check your inbox.');
+        return redirect()->route('welcome')->with('success', 'Thank you! Please check your inbox.');
+    }
+
+    public function index()
+    {
+        // Fetch all leads from the database
+        $leads = Lead::all();
+
+        // Pass leads to the view
+        return view('lead', compact('leads'));
     }
 }
