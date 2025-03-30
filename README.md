@@ -4,7 +4,7 @@ This project is a simple contact funnel with an email trigger, built using Larav
 
 ## Live Demo
 
-Check out the live demo of the project: [Live Demo](http://laravel-funnel.creativevault.ovh/)
+Check out the live demo of the project: [Live Demo](https://laravel-funnel.appointly24.com/)
 
 ## Features
 
